@@ -1,0 +1,349 @@
+
+
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+   
+   
+}
+/* all colors controls systems */
+:root{
+    --logo-clr : #e6e6e6;
+}
+body{
+  font-family: 'Bebas Neue';
+}
+.header{
+    width: 100%;
+    height: 70px;
+    background: var(--logo-clr);
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    z-index: 5;
+    position: fixed;
+    box-shadow: 0px 2px 5px black;
+}
+nav{
+    margin-right: 60px;
+}
+.header nav p{
+   list-style: none;
+    font-size: 1.2rem;
+    text-transform: capitalize;
+  
+}
+.header nav p{
+    list-style: none;
+    display: inline-block; 
+    padding: 1px 4px;
+    
+ }
+ .header nav a {
+  color: #000;
+  text-decoration: none;
+
+ }
+ .header nav p i{
+    color: #ff9d00;
+    margin-right: 15px;
+ }
+ .logo{
+  width: 110px;
+  height: 50px;
+
+ 
+  margin: 0px 20px;
+ }
+ .social-icon{
+    visibility: hidden;
+    position: absolute;
+ }
+ .logo img{
+    width: 160px;
+    margin-top: -10px;
+    cursor: pointer;
+ }
+ #toggle{
+    visibility: hidden;
+  }
+  .header .user-login{
+    visibility: hidden;
+  }
+  /* form pop and popout systems */
+  .form-box{
+    width: 0px;
+    height: 0px;
+    position: fixed;
+    /* border: 2px solid red; */
+    top: 180px;
+    left: 50%;
+   transform: translate(-50%);
+   transition: .12s;
+   overflow: hidden;
+   background-color: #fff;
+   z-index: 5;
+   box-shadow: 2px 2px 12px #000;
+   border-radius: 5px;
+  }
+  .form-box .into{
+    width: 25px;
+    height: 26px;
+    /* border: 1px solid green; */
+    background: #fff;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    margin-left: 240px;
+    cursor: pointer;
+    margin-top: 8px;
+    position: absolute;
+  }
+  .into .spinner{
+    cursor: pointer;
+    width: 25px;
+    height: 3px;
+    background-color: #000000;
+    margin-top: 3px;
+   border-radius: 15px;
+  }
+  .into .spinner1{
+   transform: rotate(45deg);
+   transform-origin: center center;
+  
+  }
+  .into .spinner2{
+    transform: rotate(-45deg);
+    transform-origin: center center;
+    margin-top: -3px;
+  
+
+  }
+  .frm{
+    width: 220px;
+    height: auto;
+    position: relative;
+    left: 20px;
+    border: 1px solid #000000;
+    padding: 5px;
+  }
+  .frm label{
+    /* margin: 25px 0px -10px 38px; */
+    font-size: 1rem;
+  }
+  .frm input{
+    width: 100%;
+    height: 30px;
+    padding: 1px 8px;
+    outline: none;
+    border: 1px solid blue;
+    font-size: .9rem;
+    border-radius: 3px;
+  }
+  /* content desgining part */
+  .con{
+  
+    width: 100%;
+    height: auto;
+    position: absolute;
+    top: 70px;
+    
+  }
+  .con .front-img{
+    width: 100%;
+    height: auto;
+  }
+  .con .front-img img{
+    width: 100%;
+    border-bottom: 2px solid #000000bd;
+  }
+  .con h1{
+    text-align: center;
+    margin: 15px 0px;
+    font-weight: 450;
+    text-transform: uppercase;
+  }
+  .steps{
+    width: 100%;
+    height: auto;
+    /* border: 1px solid red; */
+    margin: 20px auto;
+    display: flex;
+    justify-content: center;
+    flex-direction: column;
+  }
+  :root{
+    --steps-width: 90px
+  }
+  .steps .affiliate,.promote,.earn{
+    width: var(--steps-width);
+    height: var(--steps-width);
+    /* border: 1px solid #000; */
+    border-radius: 50%;
+  }
+  .affiliate::before{
+    content: " ";
+    position: absolute;
+    width: 145px;
+    height: 89px;
+    border-top: 3px dotted #2d0da1;
+    margin-top: 45px;
+    margin-left: 90px;
+  }
+  .promote::before{
+    content: " ";
+    position: absolute;
+    width: 145px;
+    height: 89px;
+    border-top: 3px dotted #2fec04;
+    margin-top: 45px;
+    margin-left: 90px;
+  }
+  .steps .inner-steps img{
+    width: var(--steps-width);
+    border: 2px solid #1f1f1ffb;
+    border-radius: 50%;
+  }
+  .steps .inner-steps .pr-illu{
+    border: 2px solid #36dc0dfb;
+  
+  }
+  
+  .steps-box{
+    width: 30%;
+    height: auto;
+    /* border: 1px solid red; */
+    margin: 20px auto;
+    display: flex;
+    gap: 150px;
+    justify-content: center;
+  }
+  .text-box{
+    width: 100%;
+    height: auto;
+    /* border: 1px solid red; */
+    margin: 20px auto;
+    display: flex;
+     gap: 10px; 
+    justify-content: center;
+    margin-top: -8px;
+  }
+
+  .text-steps{
+    width: 220px;
+    height: 80px;
+    /* border: 2px solid blue; */
+    text-align: center;
+  }
+  .text-box h3{
+    font-weight: bold;
+    font-size: 1.2rem;
+    color: rgb(10, 10, 165);
+  }
+ .button{
+  width: 100%;
+  height: 50px;
+  /* border: 1px solid gray; */
+  align-items: center;
+  display: flex;
+  justify-content: center;
+
+ }
+ .button button{
+  padding: 5px 35px;
+  border: 1px solid transparent;
+  font-size: 1.1rem ;
+  background-color: #2d0da1;
+  outline: none;
+  border-radius: 5px;
+  color: #fff;
+  cursor: pointer;
+ }
+ .button button:hover{
+  background: #ff9d00;
+ }
+
+ /* why-choose-ls part started */
+ .why-choose-ls{
+  margin-top: 25px;
+  width: 100%;
+  height: auto;
+  border: 1px solid tomato;
+ }
+ .why-choose-ls h1{
+  text-align: center;
+  margin-bottom: 40px;
+ }
+ .why-choose-ls-box{
+  width: 100%;
+  height: auto;
+  display: flex;
+  flex-wrap: wrap;
+  gap: 50px;
+  justify-content: center;
+  
+ }
+ .why-choose-ls .box{
+  width: 300px;
+  height: 280px;
+  border: 2px solid #3d3d3d7b;
+  border-radius: 8px;
+  box-shadow: 2px 4px 12px rgba(0, 0, 0, 0.224);
+  transition: .2s;
+  cursor: pointer;
+
+ }
+ .why-choose-ls .box::before{
+  position: absolute;
+  width: 70px;
+  height: 40px;
+  margin-left: 110px;
+  text-align: center;
+  font-size: 2rem;
+  border-radius: 0px 0px 8px 8px;
+  color: #fff;
+  text-shadow: 2px 2px 3px #000;
+ }
+ .samedp::before{
+  content: "01";
+  background: linear-gradient(to left ,Blue,rgb(0, 255, 157));
+  box-shadow: inset 0px 0px 5px black;
+
+ }
+ .commi::before{
+  content: "02";
+  background: linear-gradient(to left ,rgb(212, 25, 246),rgb(26, 216, 237));
+  box-shadow: inset 2px 2px 5px black;
+
+ }
+ .valueicrs::before{
+  content: "03";
+  background: linear-gradient(to left ,rgb(255, 0, 242),rgb(166, 255, 0));
+  box-shadow: inset 0px 0px 5px black;
+
+ }
+ .support::before{
+  content: "04";
+  background: linear-gradient(to left ,rgb(0, 229, 255),rgb(0, 98, 255));
+  box-shadow: inset 0px 0px 5px black;
+
+ }
+ .why-choose-ls .box:hover{
+  transform: translateY(-4px);
+ }
+ .box-heading{
+  font-size: 1.4rem;
+ line-height: 50px;
+   
+ }
+ .why-img-box{
+  width: 80px;
+  height: 80px;
+  border: 1px solid green;
+  border-radius: 50%;
+  margin-left: 105px;
+  margin-top: 90px;
+ }
+ 
